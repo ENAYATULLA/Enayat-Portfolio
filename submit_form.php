@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body .= "Message:\n$message\n";
 
     // Send email
-    $to = "your-email@example.com"; // Replace with your email address
+    $to = "enayatullah9857@gmail.com"; 
     $headers = "From: $email";
     if (mail($to, $subject, $body, $headers)) {
         echo "Thank you! Your message has been sent.";
