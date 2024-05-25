@@ -97,7 +97,7 @@ header nav ul li a:hover {
     text-decoration: none;
 }
 /* Default styles for the buttons and links */
-.firstsection .buttons .btn {
+.firstsection .buttons .btn { 
     background-color: #4CAF50; /* Green background */
     border: none;             /* No border */
     color: white;             /* White text */
@@ -160,6 +160,7 @@ header nav ul li a:hover {
 .secondsection p {
     margin: 20px 0;
     text-align: justify;
+
 }
 
 .box {
@@ -266,6 +267,7 @@ header nav ul li a:hover {
     text-align: center;
 }
 
+
 footer {
     background-color: rgb(43, 41, 43);
     padding: 20px 0;
@@ -354,4 +356,35 @@ footer {
     width: 100%;
     height: 700px;
     border: none;
+}
+.secondsection {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.secondsection .text-grey {
+    color: #888;
+}
+
+.secondsection h1 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.secondsection p {
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Media Query for Responsive Text */
+@media screen and (max-width: 768px) {
+    .secondsection h1 {
+        font-size: 30px;
+    }
+
+    .secondsection p {
+        font-size: 10px;
+    }
 }
