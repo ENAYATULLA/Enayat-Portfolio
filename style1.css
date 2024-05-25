@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(3, 7, 32);
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(8, 24, 67);
+    padding: 10px 20px;
+    height: 80px;
+
+    
+}
+
+header nav .left {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+header nav .left img.profile-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li a:hover {
+    color: rgb(230, 129, 14);
+    font-size: 1.01rem;
+}
+
+.main-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.firstsection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.firstsection .leftsection {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.firstsection .leftsection h1 {
+    font-size: 2.5rem;
+}
+
+.firstsection .leftsection h2 {
+    font-size: 2rem;
+}
+
+.firstsection .buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.firstsection .btn {
+    padding: 12px 20px;
+    border-radius: 10px;
+    background: rgb(30, 117, 232);
+    border: 2px solid white;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+/* Default styles for the buttons and links */
+.firstsection .buttons .btn {
+    background-color: #4CAF50; /* Green background */
+    border: none;             /* No border */
+    color: white;             /* White text */
+    padding: 15px 32px;       /* Some padding */
+    text-align: center;       /* Centered text */
+    text-decoration: none;    /* No underline */
+    display: inline-block;    /* Inline-block */
+    font-size: 16px;          /* Set a font size */
+    margin: 4px 2px;          /* Some margin */
+    cursor: pointer;          /* Pointer/hand icon */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    border-radius: 50px;
+}
+
+/* Hover effect for links */
+.firstsection .buttons .btn:hover {
+    background-color: #c79426; /* Darker green */
+}
+
+/* Ensuring the <a> inside <button> inherits the button styles */
+.firstsection .buttons button a {
+    color: white;             /* White text */
+    text-decoration: none;    /* No underline */
+}
+
+/* Hover effect for the button itself */
+.firstsection .buttons button:hover {
+    background-color: #888f88; /* Darker green */
+}
+
+
+.firstsection .rightsection img {
+    max-width: 100%;
+    height: auto;
+}
+
+.purple {
+    color: rgb(165, 89, 236);
+}
+
+.text-grey {
+    color: rgb(142, 134, 134);
+}
+
+#element {
+    color: rgb(165, 89, 236);
+    font-size: xx-large;
+}
+
+.secondsection, .servicessection, .projectssection, .contactsection {
+    padding: 40px 20px;
+}
+
+.secondsection h1, .servicessection h1, .projectssection h1, .contactsection h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.secondsection p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.vertical {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33% - 40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.image-top {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.vertical-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.vertical-desc {
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.services-container, .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service, .project {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33% - 40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(30, 117, 232);
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.contactsection form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contactsection .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactsection .form-group label {
+    margin-bottom: 5px;
+}
+
+.contactsection .form-group input, .contactsection .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contactsection .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(30, 117, 232);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(43, 41, 43);
+    padding: 20px 0;
+    text-align: center;
+    color: grey;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer-first {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.footer-rights {
+    margin-top: 20px;
+    color: grey;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        background-color: rgb(8, 24, 67);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+
+    header nav ul.show {
+        display: flex;
+    }
+
+    header nav .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .firstsection {
+        flex-direction: column;
+    }
+
+    .firstsection .leftsection, .firstsection .rightsection {
+        width: 100%;
+    }
+
+    .services-container, .projects-container, .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service, .project, .vertical {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .firstsection .leftsection h1 {
+        font-size: 2rem;
+    }
+
+    .firstsection .leftsection h2 {
+        font-size: 1.5rem;
+    }
+
+    .firstsection .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+.form-container {
+    margin-top: 20px;
+}
+
+.form-container iframe {
+    width: 100%;
+    height: 700px;
+    border: none;
+}
